@@ -30,6 +30,9 @@
   padding-left: 20px;
   padding-right: 20px;
 }
+.conatiner .all_header .navbar_section #navbar {
+  display: none;
+}
 .conatiner .all_header .navbar_section .logo h1 {
   padding-right: 10px;
   border: 2.5px solid black;
@@ -97,4 +100,683 @@
 }
 .conatiner .all_header .navbar_section nav ul .last a:hover {
   border-bottom: 2px solid transparent;
+}
+.conatiner .all_header .navbar_section label {
+  display: none;
+}
+.conatiner .banner {
+  height: 500px;
+}
+.conatiner .banner .first {
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url("https://img.freepik.com/premium-photo/showcase-electronic-items-black-background_893571-15169.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.conatiner .banner .first .paragraph {
+  height: 200px;
+  width: 40%;
+  margin-left: 20px;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+.conatiner .banner .first .paragraph p {
+  color: rgb(180, 126, 230);
+}
+.conatiner .banner .first .paragraph h1 {
+  color: blueviolet;
+}
+.conatiner .banner .first .paragraph span {
+  color: whitesmoke;
+}
+.conatiner .banner .first .paragraph button {
+  outline: none;
+  border: none;
+  background-color: black;
+  color: whitesmoke;
+  border-radius: 10px;
+}
+.conatiner .banner .first .paragraph button:hover {
+  background-color: whitesmoke;
+  color: black;
+  transition: all ease 2s;
+}
+.conatiner footer {
+  margin-top: 20px;
+}
+.conatiner footer .footer_menu {
+  height: 400px;
+  width: 100%;
+  background-color: #fff8f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.conatiner footer .footer_menu .veges {
+  height: 300px;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding: 20px 60px;
+  justify-content: space-evenly;
+}
+.conatiner footer .footer_menu .veges h1 {
+  display: flex;
+  padding-right: 10px;
+  border: 2.5px solid black;
+  font-size: 27px;
+}
+.conatiner footer .footer_menu .veges h1 .fir {
+  font-size: 25px;
+  font-family: cursive;
+  padding-left: 8px;
+  background-color: black;
+  color: white;
+  padding-right: 8px;
+}
+.conatiner footer .footer_menu .veges h1 .secon {
+  font-size: 25px;
+  background-color: black;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8Ah929j52MFEgv6CpoA2nmU4dv7BCfMeEyQ&s");
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.conatiner footer .footer_menu .veges p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.conatiner footer .footer_menu .veges .footer_show {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.conatiner footer .footer_menu .veges .footer_show div {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.0196078431);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+.conatiner footer .footer_menu .veges .footer_show div a {
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+}
+.conatiner footer .footer_menu .menu {
+  height: 300px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding-left: 40px;
+  justify-content: space-evenly;
+}
+.conatiner footer .footer_menu .menu h1 {
+  margin-top: 15px;
+  font-family: "Courier New", Courier, monospace;
+}
+.conatiner footer .footer_menu .menu a {
+  text-decoration: none;
+  color: black;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.conatiner footer .footer_menu .help {
+  height: 300px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding-left: 40px;
+  justify-content: space-evenly;
+}
+.conatiner footer .footer_menu .help a {
+  text-decoration: none;
+  color: black;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.conatiner footer .footer_menu .help a span {
+  margin-left: 15px;
+  margin-top: 5px;
+}
+.conatiner footer .footer_menu .help h1 {
+  font-family: "Courier New", Courier, monospace;
+  margin-top: 10px;
+}
+.conatiner footer .footer_menu .question {
+  height: 300px;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.conatiner footer .footer_menu .question h1 {
+  font-family: "Courier New", Courier, monospace;
+  margin-bottom: 15px;
+}
+.conatiner footer .footer_menu .question .location {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.conatiner footer .footer_menu .question .location i {
+  font-size: 20px;
+  text-align: start;
+  margin-bottom: 33px;
+  margin-right: 30px;
+}
+.conatiner footer .footer_menu .question .contact a {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  gap: 30px;
+  color: black;
+}
+.conatiner footer .footer_menu .question .contact i {
+  font-size: 20px;
+  color: black;
+}
+.conatiner footer .footer_menu .question .email a {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  gap: 30px;
+  color: black;
+}
+.conatiner footer .footer_menu .question .email i {
+  font-size: 20px;
+  color: black;
+}
+.conatiner footer .footer_main {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+  .conatiner .all_header .hero_section {
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    padding-top: 5px;
+  }
+  .conatiner .all_header .hero_section .descri {
+    font-weight: 100;
+  }
+  .conatiner .all_header .hero_section .login a {
+    text-decoration: none;
+    font-weight: 400;
+  }
+  .conatiner .all_header .navbar_section .logo h1 {
+    padding-right: 10px;
+    border: 2.5px solid black;
+    font-size: 27px;
+  }
+  .conatiner .all_header .navbar_section .logo h1 .fir {
+    font-size: 25px;
+    font-family: cursive;
+    padding-left: 8px;
+    background-color: black;
+    color: white;
+    padding-right: 8px;
+  }
+  .conatiner .all_header .navbar_section nav {
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+  }
+  .conatiner .all_header .navbar_section nav ul {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    gap: 40px;
+    justify-content: center;
+    justify-content: space-evenly;
+    font-family: cursive;
+    position: absolute;
+    top: 90px;
+    flex-direction: column;
+    gap: 0px;
+    left: 0px;
+    background-color: rgba(226, 93, 93, 0.1019607843);
+    width: 100%;
+    align-items: start;
+  }
+  .conatiner .all_header .navbar_section label {
+    font-size: 20px;
+    display: block;
+  }
+  .conatiner .all_header .navbar_section label:hover {
+    background-color: blue;
+    padding: 5px;
+    color: yellow;
+    border-radius: 20px;
+  }
+  .conatiner .all_header .navbar_section #navbar:checked ~ nav {
+    display: block;
+  }
+  .conatiner .banner {
+    height: 250px;
+  }
+  .conatiner .banner .first {
+    height: 100%;
+  }
+  .conatiner .banner .first .paragraph {
+    height: 150px;
+    width: 40%;
+    margin-left: 20px;
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+  }
+  .conatiner .banner .first .paragraph p {
+    font-size: 8px;
+    color: rgb(180, 126, 230);
+  }
+  .conatiner .banner .first .paragraph h1 {
+    font-size: 15px;
+    color: blueviolet;
+  }
+  .conatiner .banner .first .paragraph span {
+    font-size: 8px;
+    color: whitesmoke;
+  }
+  .conatiner .banner .first .paragraph button {
+    font-size: 16px;
+  }
+  .conatiner footer .footer_menu {
+    height: 400px;
+    width: 100%;
+    background-color: #fff8f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .conatiner footer .footer_menu .veges {
+    height: 300px;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    justify-content: space-evenly;
+  }
+  .conatiner footer .footer_menu .veges h1 {
+    padding-right: 10px;
+    border: 2.5px solid black;
+    font-size: 27px;
+  }
+  .conatiner footer .footer_menu .veges h1 .fir {
+    font-size: 18px;
+    font-family: cursive;
+    padding-left: 8px;
+    background-color: black;
+    color: white;
+    padding-right: 8px;
+  }
+  .conatiner footer .footer_menu .veges h1 .secon {
+    font-size: 18px;
+    background-color: black;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8Ah929j52MFEgv6CpoA2nmU4dv7BCfMeEyQ&s");
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .conatiner footer .footer_menu .veges p {
+    font-size: 12px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  }
+  .conatiner footer .footer_menu .veges .footer_show {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .conatiner footer .footer_menu .veges .footer_show div {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.0196078431);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+  }
+  .conatiner footer .footer_menu .veges .footer_show div a {
+    text-decoration: none;
+    font-size: 15px;
+    color: black;
+  }
+  .conatiner footer .footer_menu .menu {
+    height: 300px;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding-left: 40px;
+    justify-content: space-evenly;
+  }
+  .conatiner footer .footer_menu .menu h1 {
+    margin-top: 15px;
+    font-size: 18px;
+    font-family: "Courier New", Courier, monospace;
+  }
+  .conatiner footer .footer_menu .menu a {
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  }
+  .conatiner footer .footer_menu .help {
+    height: 300px;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding-left: 40px;
+    justify-content: space-evenly;
+  }
+  .conatiner footer .footer_menu .help a {
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  }
+  .conatiner footer .footer_menu .help a span {
+    margin-left: 5px;
+    margin-top: 1px;
+  }
+  .conatiner footer .footer_menu .help h1 {
+    font-family: "Courier New", Courier, monospace;
+    margin-top: 10px;
+    font-size: 18px;
+  }
+  .conatiner footer .footer_menu .question {
+    height: 300px;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  }
+  .conatiner footer .footer_menu .question h1 {
+    font-size: 18px;
+    font-family: "Courier New", Courier, monospace;
+    margin-bottom: 15px;
+  }
+  .conatiner footer .footer_menu .question .location {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .conatiner footer .footer_menu .question .location i {
+    font-size: 13px;
+    text-align: start;
+    margin-bottom: 10px;
+    margin-right: 10px;
+  }
+  .conatiner footer .footer_menu .question .location p {
+    font-size: 12px;
+  }
+  .conatiner footer .footer_menu .question .contact a {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    gap: 30px;
+    color: black;
+  }
+  .conatiner footer .footer_menu .question .contact i {
+    font-size: 13px;
+    color: black;
+  }
+  .conatiner footer .footer_menu .question .contact p {
+    font-size: 12px;
+  }
+  .conatiner footer .footer_menu .question .email a {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    gap: 30px;
+    color: black;
+  }
+  .conatiner footer .footer_menu .question .email i {
+    font-size: 13px;
+    color: black;
+  }
+  .conatiner footer .footer_menu .question .email p {
+    font-size: 12px;
+  }
+  .conatiner footer .footer_main {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+}
+@media screen and (max-width: 420px) {
+  .conatiner .all_header .hero_section {
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    padding-top: 5px;
+    font-size: 5px;
+  }
+  .conatiner .all_header .hero_section .descri {
+    font-weight: 50;
+    font-size: 9px;
+  }
+  .conatiner .all_header .hero_section .login a {
+    text-decoration: none;
+    font-weight: 100;
+    font-size: 9px;
+  }
+  .conatiner .all_header .navbar_section .logo h1 {
+    padding-left: -2px;
+    padding-right: -2px;
+    border: 1.5px solid black;
+    font-size: 20px;
+  }
+  .conatiner .all_header .navbar_section .logo h1 .fir {
+    font-size: 19px;
+    font-family: cursive;
+    padding-left: 2px;
+    background-color: black;
+    color: white;
+    padding-right: 2px;
+  }
+  .conatiner .all_header .navbar_section .logo h1 .secon {
+    background-color: black;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8Ah929j52MFEgv6CpoA2nmU4dv7BCfMeEyQ&s");
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .conatiner .all_header .navbar_section nav {
+    padding-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+  }
+  .conatiner .all_header .navbar_section nav ul {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    gap: 40px;
+    justify-content: center;
+    justify-content: space-evenly;
+    font-family: cursive;
+    position: absolute;
+    top: 90px;
+    flex-direction: column;
+    gap: 0px;
+    left: 0px;
+    background-color: rgba(225, 126, 168, 0.4039215686);
+    width: 100%;
+    align-items: start;
+  }
+  .conatiner .all_header .navbar_section nav ul li a {
+    font-size: 11px;
+  }
+  .conatiner .all_header .navbar_section label {
+    font-size: 20px;
+    display: block;
+  }
+  .conatiner .all_header .navbar_section label:hover {
+    background-color: blue;
+    padding: 5px;
+    color: yellow;
+    border-radius: 20px;
+  }
+  .conatiner .all_header .navbar_section #navbar:checked ~ nav {
+    display: block;
+  }
+  .conatiner .banner {
+    height: 250px;
+  }
+  .conatiner .banner .first {
+    height: 100%;
+  }
+  .conatiner .banner .first .paragraph {
+    height: 60px;
+    width: 50%;
+    margin-left: 20px;
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+  }
+  .conatiner .banner .first .paragraph p {
+    font-size: 8px;
+    color: rgb(180, 126, 230);
+  }
+  .conatiner .banner .first .paragraph h1 {
+    font-size: 15px;
+    color: blueviolet;
+  }
+  .conatiner .banner .first .paragraph span {
+    font-size: 8px;
+    color: whitesmoke;
+  }
+  .conatiner .banner .first .paragraph button {
+    font-size: 10px;
+  }
+  .conatiner footer .footer_menu {
+    height: 1000px;
+    width: 100%;
+    flex-direction: column;
+  }
+  .conatiner footer .footer_menu .veges {
+    height: 280px;
+    width: 100%;
+  }
+  .conatiner footer .footer_menu .menu {
+    height: 280px;
+    width: 100%;
+    justify-content: center;
+    align-items: start;
+    justify-content: space-evenly;
+  }
+  .conatiner footer .footer_menu .help {
+    height: 280px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding-left: 40px;
+    justify-content: space-evenly;
+  }
+  .conatiner footer .footer_menu .help a {
+    text-decoration: none;
+    color: black;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  }
+  .conatiner footer .footer_menu .help a span {
+    margin-left: 15px;
+    margin-top: 5px;
+  }
+  .conatiner footer .footer_menu .help h1 {
+    font-family: "Courier New", Courier, monospace;
+    margin-top: 10px;
+  }
+  .conatiner footer .footer_menu .question {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding-left: 10px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  }
+  .conatiner footer .footer_menu .question .location {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .conatiner footer .footer_menu .question .location i {
+    font-size: 13px;
+    text-align: start;
+    margin-left: -80px;
+  }
+  .conatiner footer .footer_menu .question .location p {
+    padding: 0px;
+    margin: 0px;
+    font-size: 12px;
+  }
+  .conatiner footer .footer_main {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 8px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
 }/*# sourceMappingURL=style.css.map */
