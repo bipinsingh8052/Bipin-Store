@@ -104,10 +104,10 @@
 .conatiner .all_header .navbar_section label {
   display: none;
 }
-.conatiner .banner {
+.conatiner div .banner {
   height: 500px;
 }
-.conatiner .banner .first {
+.conatiner div .banner .first {
   width: 100%;
   height: 100%;
   margin-left: auto;
@@ -118,7 +118,7 @@
   justify-content: start;
   align-items: center;
 }
-.conatiner .banner .first .paragraph {
+.conatiner div .banner .first .paragraph {
   height: 200px;
   width: 40%;
   margin-left: 20px;
@@ -126,23 +126,23 @@
   gap: 10px;
   flex-direction: column;
 }
-.conatiner .banner .first .paragraph p {
+.conatiner div .banner .first .paragraph p {
   color: rgb(180, 126, 230);
 }
-.conatiner .banner .first .paragraph h1 {
+.conatiner div .banner .first .paragraph h1 {
   color: blueviolet;
 }
-.conatiner .banner .first .paragraph span {
+.conatiner div .banner .first .paragraph span {
   color: whitesmoke;
 }
-.conatiner .banner .first .paragraph button {
+.conatiner div .banner .first .paragraph button {
   outline: none;
   border: none;
   background-color: black;
   color: whitesmoke;
   border-radius: 10px;
 }
-.conatiner .banner .first .paragraph button:hover {
+.conatiner div .banner .first .paragraph button:hover {
   background-color: whitesmoke;
   color: black;
   transition: all ease 2s;
@@ -385,13 +385,13 @@
   .conatiner .all_header .navbar_section #navbar:checked ~ nav {
     display: block;
   }
-  .conatiner .banner {
+  .conatiner div .banner {
     height: 250px;
   }
-  .conatiner .banner .first {
+  .conatiner div .banner .first {
     height: 100%;
   }
-  .conatiner .banner .first .paragraph {
+  .conatiner div .banner .first .paragraph {
     height: 150px;
     width: 40%;
     margin-left: 20px;
@@ -399,19 +399,19 @@
     gap: 5px;
     flex-direction: column;
   }
-  .conatiner .banner .first .paragraph p {
+  .conatiner div .banner .first .paragraph p {
     font-size: 8px;
     color: rgb(180, 126, 230);
   }
-  .conatiner .banner .first .paragraph h1 {
+  .conatiner div .banner .first .paragraph h1 {
     font-size: 15px;
     color: blueviolet;
   }
-  .conatiner .banner .first .paragraph span {
+  .conatiner div .banner .first .paragraph span {
     font-size: 8px;
     color: whitesmoke;
   }
-  .conatiner .banner .first .paragraph button {
+  .conatiner div .banner .first .paragraph button {
     font-size: 16px;
   }
   .conatiner footer .footer_menu {
@@ -676,13 +676,13 @@
   .conatiner .all_header .navbar_section #navbar:checked ~ nav {
     display: block;
   }
-  .conatiner .banner {
+  .conatiner div .banner {
     height: 250px;
   }
-  .conatiner .banner .first {
+  .conatiner div .banner .first {
     height: 100%;
   }
-  .conatiner .banner .first .paragraph {
+  .conatiner div .banner .first .paragraph {
     height: 60px;
     width: 50%;
     margin-left: 20px;
@@ -690,19 +690,19 @@
     gap: 5px;
     flex-direction: column;
   }
-  .conatiner .banner .first .paragraph p {
+  .conatiner div .banner .first .paragraph p {
     font-size: 8px;
     color: rgb(180, 126, 230);
   }
-  .conatiner .banner .first .paragraph h1 {
+  .conatiner div .banner .first .paragraph h1 {
     font-size: 15px;
     color: blueviolet;
   }
-  .conatiner .banner .first .paragraph span {
+  .conatiner div .banner .first .paragraph span {
     font-size: 8px;
     color: whitesmoke;
   }
-  .conatiner .banner .first .paragraph button {
+  .conatiner div .banner .first .paragraph button {
     font-size: 10px;
   }
   .conatiner footer .footer_menu {

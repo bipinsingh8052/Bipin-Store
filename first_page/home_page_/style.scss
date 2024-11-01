@@ -124,51 +124,56 @@
             }
         }
     }
-    .banner{
-        height: 500px;
-        
-        .first{
-            // border: 5px solid yellow;
-            width: 100%;
-            height: 100%;
-            margin-left: auto;
-            margin-right: auto;
-            background-image: url('https://img.freepik.com/premium-photo/showcase-electronic-items-black-background_893571-15169.jpg');
-            background-size: cover;
-            display: flex;
-            justify-content: start;
-            align-items: center;
-            .paragraph{
-                height: 200px;
-                width: 40%;
-                margin-left: 20px;
+    div {
+        // height: 500px;
+        // width: 1000px;
+        // overflow-x: scroll;
+        .banner{
+            height: 500px;
+            
+            .first{
+                // border: 5px solid yellow;
+                width: 100%;
+                height: 100%;
+                margin-left: auto;
+                margin-right: auto;
+                background-image: url('https://img.freepik.com/premium-photo/showcase-electronic-items-black-background_893571-15169.jpg');
+                background-size: cover;
                 display: flex;
-                gap: 10px;
-                flex-direction: column;
-                // justify-content: center;
-                // align-items: center;
-                p{
-                    color: rgb(180, 126, 230);
-                }
-                h1{
-                    color: blueviolet;
-
-                }
-                span{
-                    color: whitesmoke;
-                }
-                button{
-                    outline: none;
-                    border: none;
-                    background-color: black;
-                    color: whitesmoke;
-                    border-radius: 10px;
-                    &:hover{
-                        background-color: whitesmoke;
-                        color: black;
-                        transition: all ease 2s;
+                justify-content: start;
+                align-items: center;
+                .paragraph{
+                    height: 200px;
+                    width: 40%;
+                    margin-left: 20px;
+                    display: flex;
+                    gap: 10px;
+                    flex-direction: column;
+                    // justify-content: center;
+                    // align-items: center;
+                    p{
+                        color: rgb(180, 126, 230);
                     }
+                    h1{
+                        color: blueviolet;
 
+                    }
+                    span{
+                        color: whitesmoke;
+                    }
+                    button{
+                        outline: none;
+                        border: none;
+                        background-color: black;
+                        color: whitesmoke;
+                        border-radius: 10px;
+                        &:hover{
+                            background-color: whitesmoke;
+                            color: black;
+                            transition: all ease 2s;
+                        }
+
+                    }
                 }
             }
         }
@@ -508,40 +513,42 @@
         }
 
 
-        .banner{
-            height: 250px;
-            .first{
-                height: 100%;
-             
-                .paragraph{
-                    height: 150px;
-                    width: 40%;
-                    margin-left: 20px;
-                    display: flex;
-                    gap:5px;
-                    flex-direction: column;
-                    // justify-content: center;
-                    // align-items: center;
-                    p{
-                        font-size: 8px;
-                        color: rgb(180, 126, 230);
-                    }
-                    h1{
-                        font-size: 15px;
-                        color: blueviolet;
-    
-                    }
-                    span{
-                        font-size: 8px;
-                        color: whitesmoke;
-                    }
-                    button{
-                        font-size: 16px;
+        div{
+            .banner{
+                height: 250px;
+                .first{
+                    height: 100%;
+                 
+                    .paragraph{
+                        height: 150px;
+                        width: 40%;
+                        margin-left: 20px;
+                        display: flex;
+                        gap:5px;
+                        flex-direction: column;
+                        // justify-content: center;
+                        // align-items: center;
+                        p{
+                            font-size: 8px;
+                            color: rgb(180, 126, 230);
+                        }
+                        h1{
+                            font-size: 15px;
+                            color: blueviolet;
+        
+                        }
+                        span{
+                            font-size: 8px;
+                            color: whitesmoke;
+                        }
+                        button{
+                            font-size: 16px;
+                        }
                     }
                 }
+        
+        
             }
-    
-    
         }
 
 
@@ -911,34 +918,36 @@
 
 
 
-        .banner{
-            height: 250px;
-            .first{
-                height: 100%;
-                .paragraph{
-                    height: 60px;
-                    width: 50%;
-                    margin-left: 20px;
-                    display: flex;
-                    gap:5px;
-                    flex-direction: column;
-                    // justify-content: center;
-                    // align-items: center;
-                    p{
-                        font-size: 8px;
-                        color: rgb(180, 126, 230);
-                    }
-                    h1{
-                        font-size: 15px;
-                        color: blueviolet;
-    
-                    }
-                    span{
-                        font-size: 8px;
-                        color: whitesmoke;
-                    }
-                    button{
-                        font-size: 10px;
+        div{
+            .banner{
+                height: 250px;
+                .first{
+                    height: 100%;
+                    .paragraph{
+                        height: 60px;
+                        width: 50%;
+                        margin-left: 20px;
+                        display: flex;
+                        gap:5px;
+                        flex-direction: column;
+                        // justify-content: center;
+                        // align-items: center;
+                        p{
+                            font-size: 8px;
+                            color: rgb(180, 126, 230);
+                        }
+                        h1{
+                            font-size: 15px;
+                            color: blueviolet;
+        
+                        }
+                        span{
+                            font-size: 8px;
+                            color: whitesmoke;
+                        }
+                        button{
+                            font-size: 10px;
+                        }
                     }
                 }
             }
