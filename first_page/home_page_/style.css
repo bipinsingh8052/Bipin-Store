@@ -147,48 +147,81 @@
   color: black;
   transition: all ease 2s;
 }
-.conatiner .main_body {
-  margin-top: 10px;
-  margin-bottom: 10px;
+.conatiner .main_body .all_cards {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
 }
-.conatiner .main_body .card {
+.conatiner .main_body .all_cards .card {
+  margin-top: 10px;
+  margin-bottom: 10px;
   height: 300px;
   width: 200px;
   display: flex;
   justify-content: center;
   align-items: start;
   border: none;
-  box-shadow: 0px 0px 5px 1px black;
+  box-shadow: 0px 0px 5px 1px rgba(217, 187, 224, 0.4);
 }
-.conatiner .main_body .card .img {
+.conatiner .main_body .all_cards .card:hover {
+  animation-name: hov;
+  animation-duration: inherit;
+  animation-timing-function: 2s;
+  animation-iteration-count: 1;
+}
+@keyframes hov {
+  0% {
+    position: relative;
+    transform: rotateY(20deg);
+  }
+  50% {
+    position: relative;
+    transform: rotateY(90deg);
+  }
+  80% {
+    position: relative;
+    transform: rotateY(180deg);
+  }
+  90% {
+    position: relative;
+    transform: rotateY(240deg);
+  }
+  100% {
+    position: relative;
+    transform: rotateY(36deg);
+  }
+}
+.conatiner .main_body .all_cards .card .img {
   height: 60%;
   width: 100%;
 }
-.conatiner .main_body .card .img img {
+.conatiner .main_body .all_cards .card .img img {
   height: 100%;
   width: 100%;
 }
-.conatiner .main_body .card .heading {
+.conatiner .main_body .all_cards .card .heading {
+  padding-left: 5px;
   height: 5%;
   width: 100%;
   font-size: 10px;
   display: flex;
 }
-.conatiner .main_body .card .product_name {
+.conatiner .main_body .all_cards .card .product_name {
+  padding-left: 5px;
   height: 20%;
   width: 100%;
 }
-.conatiner .main_body .card .product_name h5 {
+.conatiner .main_body .all_cards .card .product_name h5 {
   font-size: 18px;
 }
-.conatiner .main_body .card .product_name p {
+.conatiner .main_body .all_cards .card .product_name p {
   width: 100%;
   font-size: 13px;
 }
-.conatiner .main_body .card .price {
+.conatiner .main_body .all_cards .card .price {
+  padding-left: 5px;
   width: 100%;
   height: 5%;
   display: flex;
@@ -196,25 +229,25 @@
   align-items: center;
   gap: 10px;
 }
-.conatiner .main_body .card .price .fixed_price {
+.conatiner .main_body .all_cards .card .price .fixed_price {
   font-size: 15px;
   font-weight: 500;
 }
-.conatiner .main_body .card .price .main_price {
+.conatiner .main_body .all_cards .card .price .main_price {
   font-size: 12px;
   font-weight: 450;
 }
-.conatiner .main_body .card .price .offer {
+.conatiner .main_body .all_cards .card .price .offer {
   font-size: 12px;
   color: rgb(21, 214, 21);
 }
-.conatiner .main_body .card .button {
+.conatiner .main_body .all_cards .card .button {
   display: flex;
   align-items: end;
   height: 10%;
   width: 100%;
 }
-.conatiner .main_body .card .button button {
+.conatiner .main_body .all_cards .card .button button {
   width: 100%;
   outline: none;
   border: none;
@@ -222,7 +255,7 @@
   font-weight: 500;
   background-color: rgba(230, 200, 30, 0.905);
 }
-.conatiner .main_body .card .button button:hover {
+.conatiner .main_body .all_cards .card .button button:hover {
   background-color: blueviolet;
   color: white;
   transition: all 2s ease-in-out;
