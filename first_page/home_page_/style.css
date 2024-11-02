@@ -164,34 +164,7 @@
   align-items: start;
   border: none;
   box-shadow: 0px 0px 5px 1px rgba(217, 187, 224, 0.4);
-}
-.conatiner .main_body .all_cards .card:hover {
-  animation-name: hov;
-  animation-duration: inherit;
-  animation-timing-function: 2s;
-  animation-iteration-count: 1;
-}
-@keyframes hov {
-  0% {
-    position: relative;
-    transform: rotateY(20deg);
-  }
-  50% {
-    position: relative;
-    transform: rotateY(90deg);
-  }
-  80% {
-    position: relative;
-    transform: rotateY(180deg);
-  }
-  90% {
-    position: relative;
-    transform: rotateY(240deg);
-  }
-  100% {
-    position: relative;
-    transform: rotateY(36deg);
-  }
+  transition: all;
 }
 .conatiner .main_body .all_cards .card .img {
   height: 60%;

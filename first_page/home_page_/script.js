@@ -1,22 +1,36 @@
+displayItem();
+// function perform(){
+//     let a=document.querySelector(" .all_cards .card");
+//     console.log(a.style);
+//     let b=document.querySelector(".all_cards");
+//     a.style.cursor="pointer";
+//     b.style.postion="relative";
+//     // a.style.top="-20px"
+//     a.style.height='320px';
+//     a.style.marginTop="0px"
+//     a.style.marginBottm="0px";
+//     a.style.width="220px";
+// }
 
+let arr_bag=[];
+function addtoBag(itemid){
+
+
+
+    // let stringbag= localStorage.getItem('arr_bag');
+    // console.log(stringbag);
+    let a=document.querySelector("nav ul .last a span");  
+    arr_bag.push(itemid);
+    let count=new Set(arr_bag);
+    localStorage.setItem("count",JSON.stringify(count));
+    a.innerHTML=count.size;
+    console.log(count);
+}
+
+function displayItem(){
+    
 let cards=document.querySelector(".all_cards");
 
-// let card_info={
-//     id:"000",
-//     imgSrc:'https://d2fy0k1bcbbnwr.cloudfront.net/Designs_Inners_and_Outers/Tshirts/Men/Men_Plain_Sunset_Orange_1.jpg',
-//     star: {
-//         rating:4.5,
-//         noofReviews:1400,
-//     },
-//     companyname:'VeBNoR',
-//     itemName:"Men Printed  Polo ck Polyeoem",
-//     price:{
-//         fixedprice:299,
-//         originalprice:499,
-//         offer:72
-//     },
-//     button:"Add to Cart"
-// }
 
 let card_info=[
     {
@@ -149,7 +163,7 @@ let card_info=[
 let innerhtml=" ";
 card_info.map((item)=>
     innerhtml+=
-`<div class="card  ${item.id}">
+`<div class="card  ${item.id}" onmouseleave="perform()">
 <div class="img">
     <img src="${item.imgSrc}" alt="">
 </div>
@@ -166,12 +180,13 @@ card_info.map((item)=>
     <div class="offer">${item.price.offer}% off</div>
 </div>
 <div class="button">
-    <button>${item.button}</button>
+    <button onclick="addtoBag(${item.id})">${item.button}</button>
 </div>
 </div> 
 `
 );
 cards.innerHTML=`${innerhtml}`;
+}
 
 
 
