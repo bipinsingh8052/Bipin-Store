@@ -126,7 +126,88 @@
     }
    
 // main section
+  .main_body
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    .carts{
+        border: 2px solid black;
+        width: 50%;
+        
+        .card_list{
+            height: 300px;
+            width: 100%;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-around;
+            // border: 1px solid black;
+            .img{
+                height: 280px;
+                width: 170px;
+                img{
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+            .paragraph{
+                .pname{
 
+                }
+                .pdetail{
+    
+                }
+                .price{
+                    
+                }
+                .days{
+
+                }
+                .Delivery{
+
+                }
+            }
+            .button
+            {
+                cursor: pointer;
+                font-size: 27px;
+                text-align: start;
+                height: 100%;
+                // border: 1px solid black;
+                width: 20px;
+                &:hover{
+                    color: rgb(179, 28, 217);
+                    transition: color 2s ease;
+                }
+
+            }
+            
+        }
+    }
+    aside{
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid black;
+        .display_total{
+            width: 90%;
+            border: 2px solid black;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+           div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-between;
+           }
+        }
+    }
+  }
     // main section
 
 // footer section

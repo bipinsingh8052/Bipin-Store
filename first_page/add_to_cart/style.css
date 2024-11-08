@@ -104,6 +104,61 @@
 .conatiner .all_header .navbar_section label {
   display: none;
 }
+.conatiner .main_body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.conatiner .main_body .carts {
+  border: 2px solid black;
+  width: 50%;
+}
+.conatiner .main_body .carts .card_list {
+  height: 300px;
+  width: 100%;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+}
+.conatiner .main_body .carts .card_list .img {
+  height: 280px;
+  width: 170px;
+}
+.conatiner .main_body .carts .card_list .img img {
+  height: 100%;
+  width: 100%;
+}
+.conatiner .main_body .carts .card_list .button {
+  cursor: pointer;
+  font-size: 27px;
+  text-align: start;
+  height: 100%;
+  width: 20px;
+}
+.conatiner .main_body .carts .card_list .button:hover {
+  color: rgb(179, 28, 217);
+  transition: color 2s ease;
+}
+.conatiner .main_body aside {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+}
+.conatiner .main_body aside .display_total {
+  width: 90%;
+  border: 2px solid black;
+}
+.conatiner .main_body aside .display_total div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
 .conatiner footer {
   margin-top: 20px;
 }
