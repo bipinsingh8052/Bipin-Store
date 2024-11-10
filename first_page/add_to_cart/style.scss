@@ -128,19 +128,30 @@
 // main section
   .main_body
   {
+    margin-top: 20px;
+    background-color: rgba(221, 208, 208, 0.178);
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: start;
+    align-items: start;
     justify-content: space-evenly;
     .carts{
-        border: 2px solid black;
+        // border: 2px solid black;
         width: 50%;
+        height: auto;
+        display: flex;
+        gap: 15px;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
         
         .card_list{
+            background-color: rgb(246, 241, 241);
+            box-shadow: 1px 1px 4px 1px black;
             height: 300px;
             width: 100%;
-            border: 1px solid black;
+            // border: 1px solid black;
             display: flex;
+            // flex-direction: column;
             justify-content: center;
             align-items: center;
             justify-content: space-around;
@@ -155,18 +166,44 @@
             }
             .paragraph{
                 .pname{
+                    font-weight: 500;
+                    font-size: 27px;
 
                 }
                 .pdetail{
     
+                    font-weight: 200;
                 }
                 .price{
-                    
+                    width: 100%;
+                    display: flex;
+                    justify-content: start;
+                    align-items: center;
+                    gap: 10px;
+                    .first_price{
+                        font-weight: 500;
+                        font-size: 22px;
+                    }
+                    .second_price{
+                        font-weight: 100;
+                        font-size: 15px;
+                    }
+                    .last_price{
+                        color: blue;
+
+                    }
                 }
                 .days{
+                    span{
+                        font-weight: 600;
+                    }
+                    font-weight: 300;
 
                 }
                 .Delivery{
+                    span{
+                        color: rgb(19, 161, 19);
+                    }
 
                 }
             }
@@ -188,14 +225,18 @@
         }
     }
     aside{
+        background-color: rgb(245, 241, 241);
         width: 30%;
         display: flex;
         justify-content: center;
         align-items: center;
-        border: 1px solid black;
+        padding-top: 10px;
+        box-shadow: 1px 1px 4px 1px black;
+        padding-bottom: 10px;
+        // border: 1px solid black;
         .display_total{
             width: 90%;
-            border: 2px solid black;
+            // border: 2px solid black;
             // display: flex;
             // justify-content: center;
             // align-items: center;
@@ -204,6 +245,45 @@
             justify-content: center;
             align-items: center;
             justify-content: space-between;
+           }
+           p{
+            font-weight: 500;
+            span{
+                font-weight: 300;
+            }
+           }
+           .mrp{
+            p{
+                font-weight: 350;
+            }
+            span{
+                font-weight: 350;
+            }
+           }
+           .confees{
+            p{
+                font-weight: 350;
+            }
+            span{
+                font-weight: 350;
+            }
+           }
+           .mrp_dis{
+            p{
+                font-weight: 350;
+            }
+            span{
+                font-weight: 280;
+            }
+           }
+           button{
+            height: 30px;
+            width: 100%;
+            outline: none;
+            border: none;
+            color: rgb(255, 255, 255);
+            background-color:rgb(119, 0, 86) ;
+            border-radius: 10px;
            }
         }
     }
@@ -544,43 +624,93 @@
         }
 
 
-        // div{
-        //     .banner{
-        //         height: 250px;
-        //         .first{
-        //             height: 100%;
-                 
-        //             .paragraph{
-        //                 height: 150px;
-        //                 width: 40%;
-        //                 margin-left: 20px;
-        //                 display: flex;
-        //                 gap:5px;
-        //                 flex-direction: column;
-        //                 // justify-content: center;
-        //                 // align-items: center;
-        //                 p{
-        //                     font-size: 8px;
-        //                     color: rgb(180, 126, 230);
-        //                 }
-        //                 h1{
-        //                     font-size: 15px;
-        //                     color: blueviolet;
-        
-        //                 }
-        //                 span{
-        //                     font-size: 8px;
-        //                     color: whitesmoke;
-        //                 }
-        //                 button{
-        //                     font-size: 16px;
-        //                 }
-        //             }
-        //         }
-        
-        
-        //     }
-        // }
+        .main_body
+        {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          justify-content: space-evenly;
+          .carts{
+              border: 2px solid black;
+              width: 90%;
+              
+              .card_list{
+                  height: 300px;
+                  width: 100%;
+                  border: 1px solid black;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  justify-content: space-around;
+                  // border: 1px solid black;
+                  .img{
+                      height: 200px;
+                      width: 150px;
+                      img{
+                          height: 100%;
+                          width: 100%;
+                      }
+                  }
+                  .paragraph{
+                      .pname{
+      
+                      }
+                      .pdetail{
+          
+                      }
+                      .price{
+                          
+                      }
+                      .days{
+      
+                      }
+                      .Delivery{
+      
+                      }
+                  }
+                  .button
+                  {
+                      cursor: pointer;
+                      font-size: 23px;
+                      text-align: start;
+                      height: 100%;
+                      // border: 1px solid black;
+                      width: 20px;
+                      &:hover{
+                          color: rgb(179, 28, 217);
+                          transition: color 2s ease;
+                      }
+      
+                  }
+                  
+              }
+          }
+          aside{
+              width: 100%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              border: 1px solid black;
+              .display_total{
+                  width: 90%;
+                  border: 2px solid black;
+                  // display: flex;
+                  // justify-content: center;
+                  // align-items: center;
+                 div{
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  justify-content: space-between;
+                 }
+                 button{
+                    width: 100%;
+                    height: 40px;
+                 }
+              }
+          }
+        }
 
 
 

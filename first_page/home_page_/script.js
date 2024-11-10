@@ -1,36 +1,38 @@
-displayItem();
-// function perform(){
-//     let a=document.querySelector(" .all_cards .card");
-//     console.log(a.style);
-//     let b=document.querySelector(".all_cards");
-//     a.style.cursor="pointer";
-//     b.style.postion="relative";
-//     // a.style.top="-20px"
-//     a.style.height='320px';
-//     a.style.marginTop="0px"
-//     a.style.marginBottm="0px";
-//     a.style.width="220px";
-// }
+let arr_bag;
 
-let arr_bag=[];
-function addtoBag(itemid){
+onload();
 
+function onload(){
+    let bagItemStr=localStorage.getItem(arr_bag);
+    arr_bag=bagItemStr ? JSON.parse(bagItemStr) : [];
+    
+    displayItem();
+    displayBagIcon();
+    // arr_bag.preventDefault();
+    // console.log(arr_bag);
+}
 
-
-    // let stringbag= localStorage.getItem('arr_bag');
-    // console.log(stringbag);
+function displayBagIcon(){
+    
     let a=document.querySelector("nav ul .last a span");  
+    a.innerHTML=arr_bag.length;
+    // console.log(arr_bag)
+}
+function addtoBag(itemid){
     arr_bag.push(itemid);
-    let count=new Set(arr_bag);
-    localStorage.setItem("count",JSON.stringify(count));
-    a.innerHTML=count.size;
-    console.log(count);
+    // console.log(arr_bag)
+    localStorage.setItem("arr_bag",JSON.stringify(arr_bag));
+    displayBagIcon();
 }
 
 function displayItem(){
     
 let cards=document.querySelector(".all_cards");
 
+console.log(cards);
+if(!cards){
+    return;
+}
 
 let card_info=[
     {
@@ -160,10 +162,11 @@ let card_info=[
 
     }
 ]
+
 let innerhtml=" ";
 card_info.map((item)=>
     innerhtml+=
-`<div class="card  ${item.id}" onmouseleave="perform()">
+`<div class="card  ${item.id}" >
 <div class="img">
     <img src="${item.imgSrc}" alt="">
 </div>
