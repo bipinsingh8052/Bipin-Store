@@ -26,10 +26,9 @@ function displaycart(){
                         <i class="fa-solid fa-xmark"></i>
                     </div>
                 </div>`;
-    console.error("vbjkl;");
-    console.log(arr_bag);
+    // console.error("vbjkl;");
+    // console.log(arr_bag);
     
 }
-console.log(arr_bag)
-let a=`http://127.0.0.1:5500 `;
-console.log(a.value);
+let a=localStorage.getItem("arr_bag");
+console.log(a);

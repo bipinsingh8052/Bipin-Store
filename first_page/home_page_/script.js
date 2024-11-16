@@ -3,9 +3,10 @@ let arr_bag;
 onload();
 
 function onload(){
-    let bagItemStr=localStorage.getItem(arr_bag);
+    let bagItemStr=localStorage.getItem("arr_bag");
     arr_bag=bagItemStr ? JSON.parse(bagItemStr) : [];
     
+    console.log(arr_bag);
     displayItem();
     displayBagIcon();
     // arr_bag.preventDefault();
@@ -22,7 +23,9 @@ function addtoBag(itemid){
     arr_bag.push(itemid);
     // console.log(arr_bag)
     localStorage.setItem("arr_bag",JSON.stringify(arr_bag));
+    console.log(arr_bag);
     displayBagIcon();
+    
 }
 
 function displayItem(){
