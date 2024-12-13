@@ -126,78 +126,47 @@ let card_info=[
 
     }
 ]
+
+let data =0;
 onload();
 function onload(){
     displaycart();
 }
+
 function displaycart(){
     let a=JSON.parse(localStorage.getItem("arr_bag"));
-    // console.log(a);
+    console.log(a);
+    let c =document.querySelector("nav ul .last a span")
+    c.innerHTML=a.length;
     let i=0;
     for(let i=0;i<=a.length-1;i++){
           bag(a[i]);
         // console.log(i);
     }
+    
     function bag (a){
-        card_info.map((e)=>{
+        // card_info.filter((e,a)=>{
+        //     if(e.id == a){
+        //         all_data =``
+        //     }
+        // })
+       data=data + card_info.map((e)=>{
         // let numb =e.id;
         // console.log(numb);
+        // card_display_all_in(e.id ,e.imgSrc ,e.companyname,e.itemName ,e.price.fixedprice ,e.price.originalprice ,e.price.offer ,e.star.rating ,e.star.noofReviews)
         if(e.id == a){
-            // console.log(e);
-            card_display_all_in(e.id ,e.imgSrc ,e.companyname,e.itemName ,e.price.fixedprice ,e.price.originalprice ,e.price.offer ,e.star.rating ,e.star.noofReviews)
-        }
-        // else{
-        //     console.log("jjn");
-        // }
-        
-    })}
-    
-   
-    // console.error("vbjkl;");
-    // console.log(arr_bag);
-    // console.log(card);
-    
-}
-function card_display_all_in (id ,img , bname,pDetail ,First_price ,Second_price ,offer ,rating,review){
-    // console.log(id);
-    // console.log()
-
-    let card=document.querySelector(".carts");
-    card.innerHTML=`
-    <div class="card_list  ${id}" >
+            
+          return `<div class="card_list  ${e.id}" >
                     <div class="img">
-                        <img src='${img}' alt="">
+                        <img src='${e.imgSrc}' alt="">
                     </div>
                     <div class="paragraph">
-                        <p class="pname">${bname}</p>
-                        <p class="pdetail">${pDetail}</p>
+                        <p class="pname">${e.companyname}</p>
+                        <p class="pdetail">${e.itemName}</p>
                         <div class="price">
-                            <p class="first_price">Rs ${First_price}</p>
-                            <P class="second_price"><del>Rs ${Second_price}</del></P>
-                            <p class="last_price"><span>(${offer}%off)</span></p>
-                        </div>
-                        <p class="days"><span>14 days </span> return Avaliable</p>
-                        <p class="Delivery">Delivery in <span>10 days</span></p>
-                    </div>
-                    <div class="button">
-                        <i class="fa-solid fa-xmark"></i>
-                    </div>
-                </div>
-                
-                
-                
-                
-                 <div class="card_list  ${id}" >
-                    <div class="img">
-                        <img src='${img}' alt="">
-                    </div>
-                    <div class="paragraph">
-                        <p class="pname">${bname}</p>
-                        <p class="pdetail">${pDetail}</p>
-                        <div class="price">
-                            <p class="first_price">Rs ${First_price}</p>
-                            <P class="second_price"><del>Rs ${Second_price}</del></P>
-                            <p class="last_price"><span>(${offer}%off)</span></p>
+                            <p class="first_price">Rs ${e.price.fixedprice}</p>
+                            <P class="second_price"><del>Rs ${e.price.originalprice}</del></P>
+                            <p class="last_price"><span>(${e.price.offer}%off)</span></p>
                         </div>
                         <p class="days"><span>14 days </span> return Avaliable</p>
                         <p class="Delivery">Delivery in <span>10 days</span></p>
@@ -206,7 +175,82 @@ function card_display_all_in (id ,img , bname,pDetail ,First_price ,Second_price
                         <i class="fa-solid fa-xmark"></i>
                     </div>
                 </div>`;
-
-
-
+          
+            // console.log(e);
+           
+            // console.log(e.id ,e.imgSrc ,e.companyname,e.itemName ,e.price.fixedprice ,e.price.originalprice ,e.price.offer ,e.star.rating ,e.star.noofReviews)
+        }
+        
+     
+        // else{
+        //     console.log("jjn");
+        // }
+        
+    }).join("")
 }
+// console.log(data);
+    
+   
+    // console.error("vbjkl;");
+    // console.log(arr_bag);
+    // console.log(card);
+    
+}
+// function card_display_all_in (id ,img , bname,pDetail ,First_price ,Second_price ,offer ,rating,review){
+//     // console.log(id);
+//     // console.log()
+
+//     console.log(id,img,bname,pDetail,First_price,Second_price)
+//     let card=document.querySelector(".carts");
+//     card.innerHTML=`
+//     <div class="card_list  ${id}" >
+//                     <div class="img">
+//                         <img src='${img}' alt="">
+//                     </div>
+//                     <div class="paragraph">
+//                         <p class="pname">${bname}</p>
+//                         <p class="pdetail">${pDetail}</p>
+//                         <div class="price">
+//                             <p class="first_price">Rs ${First_price}</p>
+//                             <P class="second_price"><del>Rs ${Second_price}</del></P>
+//                             <p class="last_price"><span>(${offer}%off)</span></p>
+//                         </div>
+//                         <p class="days"><span>14 days </span> return Avaliable</p>
+//                         <p class="Delivery">Delivery in <span>10 days</span></p>
+//                     </div>
+//                     <div class="button">
+//                         <i class="fa-solid fa-xmark"></i>
+//                     </div>
+//                 </div>
+                
+                
+                
+                
+//                  <div class="card_list  ${id}" >
+//                     <div class="img">
+//                         <img src='${img}' alt="">
+//                     </div>
+//                     <div class="paragraph">
+//                         <p class="pname">${bname}</p>
+//                         <p class="pdetail">${pDetail}</p>
+//                         <div class="price">
+//                             <p class="first_price">Rs ${First_price}</p>
+//                             <P class="second_price"><del>Rs ${Second_price}</del></P>
+//                             <p class="last_price"><span>(${offer}%off)</span></p>
+//                         </div>
+//                         <p class="days"><span>14 days </span> return Avaliable</p>
+//                         <p class="Delivery">Delivery in <span>10 days</span></p>
+//                     </div>
+//                     <div class="button">
+//                         <i class="fa-solid fa-xmark"></i>
+//                     </div>
+//                 </div>`;
+
+
+
+// }
+
+// console.log("dat")
+// console.log(all_data);
+let add_data=document.querySelector(".main_body .carts").innerHTML=data;
+console.log(data)
