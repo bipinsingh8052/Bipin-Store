@@ -135,15 +135,15 @@ function displaycart(){
     // console.log(a);
     let i=0;
     for(let i=0;i<=a.length-1;i++){
-        bag(a[i]);
-        console.log(i);
+          bag(a[i]);
+        // console.log(i);
     }
     function bag (a){
         card_info.map((e)=>{
         // let numb =e.id;
         // console.log(numb);
         if(e.id == a){
-            console.log(e);
+            // console.log(e);
             card_display_all_in(e.id ,e.imgSrc ,e.companyname,e.itemName ,e.price.fixedprice ,e.price.originalprice ,e.price.offer ,e.star.rating ,e.star.noofReviews)
         }
         // else{
